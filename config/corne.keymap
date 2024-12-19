@@ -101,10 +101,10 @@
         Raise {
             label = "Raise";
             bindings = <
-  &kp DOLLAR  &kp PERCENT    &kp CARET         &kp LBRC   &kp RBRC    &kp EQUAL  &kp PLUS      &kp GRAVE  &kp SINGLE_QUOTE   &kp SEMICOLON    &none
-  &kp AMPS    &kp EXCL       &kp QMARK         &kp LBKT   &kp RBKT    &kp UNDER  &kp MINUS     &trans     &kp DOUBLE_QUOTES  &kp COLON        &none
-  &kp AT      &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR   &kp RPAR    &kp HASH   &kp ASTERISK  &kp TILDE  &kp PIPE           &kp BACKSLASH    &none
-                             &trans            &kp SPACE  &trans      &trans     &trans        &trans
+  &none    &kp DOLLAR  &kp PERCENT    &kp CARET         &kp LBRC   &kp RBRC    &kp EQUAL  &kp PLUS      &kp GRAVE  &kp SINGLE_QUOTE   &kp SEMICOLON    &none
+  &none    &kp AMPS    &kp EXCL       &kp QMARK         &kp LBKT   &kp RBKT    &kp UNDER  &kp MINUS     &trans     &kp DOUBLE_QUOTES  &kp COLON        &none
+  &none    &kp AT      &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR   &kp RPAR    &kp HASH   &kp ASTERISK  &kp TILDE  &kp PIPE           &kp BACKSLASH    &none
+                                      &trans            &kp SPACE  &trans      &trans     &trans        &trans
             >;
         };
 

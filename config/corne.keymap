@@ -59,19 +59,14 @@
             require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
         };
 
-        bt+boot_right {
-            bindings = <&mo 4>;
-            key-positions = <6 7 8 9>;
-        };
-
-        bt+boot_left {
-            bindings = <&mo 4>;
-            key-positions = <2 3 4 5>;
-        };
-
         caps_word {
             bindings = <&caps_word>;
             key-positions = <16 19>;
+        };
+
+        btconfig {
+            bindings = <&mo 4>;
+            key-positions = <25 26 27>;
         };
     };
 
@@ -91,9 +86,9 @@
         Lower {
             label = "Lower";
             bindings = <
-&none  &kp F1  &kp F2   &kp F3    &kp F4     &none         &kp EQUAL   &kp N1         &kp N2    &kp N3        &kp SLASH  &none
+&none  &kp F1  &kp F2   &kp F3    &kp F4     &none         &kp EQUAL   &kp N1         &kp N2    &kp N3        &kp N0     &none
 &none  &kp F5  &kp F6   &kp F7    &kp F8     &none         &kp MINUS   &kp N4         &kp N5    &kp NUMBER_6  &kp ASTRK  &none
-&none  &kp F9  &kp F10  &kp F11   &kp F12    &none         &kp PLUS    &kp N7         &kp N8    &kp N9        &kp N0     &none
+&none  &kp F9  &kp F10  &kp F11   &kp F12    &none         &kp PLUS    &kp N7         &kp N8    &kp N9        &kp SLASH  &none
                         &kp LEFT  &kp RIGHT  &kp DELETE    &kp PERIOD  &kp BACKSPACE  &kp HASH
             >;
         };
@@ -121,10 +116,10 @@
         bt+boot {
             label = "bt+boot";
             bindings = <
-&none  &bt BT_NXT    &bt BT_PRV  &none  &none  &none          &bt BT_NXT    &bt BT_PRV  &none  &none  &none        &none
-&none  &bt BT_CLR    &none       &none  &none  &none          &bt BT_CLR    &none       &none  &none  &none        &none
-&none  &out OUT_TOG  &none       &none  &none  &bootloader    &out OUT_TOG  &none       &none  &none  &bootloader  &none
-                                 &none  &none  &none          &none         &none       &none
+&none  &none  &none  &none         &bt BT_SEL 0  &bt BT_SEL 3    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none         &bt BT_SEL 1  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none         &bt BT_SEL 2  &bt BT_CLR      &none  &none  &none  &none  &none  &none
+                     &out OUT_TOG  &bt BT_PRV    &bt BT_NXT      &none  &none  &none
             >;
         };
 
